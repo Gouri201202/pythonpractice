@@ -1,0 +1,14 @@
+import math
+n=int(input("Enter the no of students"))
+mark1=[]
+name=[]
+regno=[]
+grade=[]
+mark2=[]
+mark3=[]
+AVG=[]
+def avg(mark1,mark2,marks3):
+    for i in range (n):
+        s=mark1[i]+mark2[i]+mark3[i]
+        AVG.append(s/3)
+        
