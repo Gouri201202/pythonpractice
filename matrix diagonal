@@ -1,0 +1,26 @@
+mtx=[]
+print("Creating a matrix")
+for i in range (4):
+    sub=[]
+    for j in range (4):
+        sub.append(int(input("Enter element of the matrix")))
+    mtx.append(sub)
+print("The matrix is",mtx)
+clm=[]
+row=[]
+for i in range (4):
+    c=0;
+    for j in range (4):
+        c=c+mtx[j][i]
+    clm.append(c)
+for i in range (4):
+    r=1;
+    for j in range (4):
+        r=r*mtx[i][j]
+    row.append(r)
+sml=min(clm)
+lrg=max(row)
+print("The smallest sum of coloumn is",sml)
+print("The index of the column is",clm.index(sml))
+print("The largest product of row is",lrg)
+print("The index of the row is",row.index(lrg))
