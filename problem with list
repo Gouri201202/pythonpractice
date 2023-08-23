@@ -1,0 +1,24 @@
+biscut=[]
+sih=[]
+price=[]
+n=int(input("Enter the varieties of biscuts available"))
+print("Enter the data")
+for i in range (n):
+    biscut.append(input("Enter the biscut name"))
+    sih.append(int(input("Enter the stock in hand")))
+    price.append(int(input("Enter the price")))
+a=1
+amt=0;
+while a==1:
+    b=input("name of the biscut for which order is to be placed")
+    o=biscut.index(b)
+    s=int(input("Enter the no of that particular biscut"))
+    if(sih[0]>=s):
+        amt=amt+price[0]*s
+        sih[o]=sih[o]-s
+    else:
+        print("Biscut out of stock")
+
+    a=int(input("If you like to order more biscuts press one else any other no"))
+
+print("The total amount is",amt)
