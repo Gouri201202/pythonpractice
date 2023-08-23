@@ -1,0 +1,13 @@
+f1=open("1074.txt","r")
+s=f1.readlines();
+print(s)
+l=len(s)
+n=[]
+for i in range(l):
+    s1=s[i].split(" ")
+    print(s1)
+    n.append(len(s1))
+    print(n[i])
+print("The length of largest sentence",max(n))
+print("The largest sentence is",s[n.index(max(n))])
+    
