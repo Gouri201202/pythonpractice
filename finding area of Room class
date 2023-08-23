@@ -1,0 +1,13 @@
+class Room:
+    def __init__(self,l,b):
+        self.length=l
+        self.breadth=b
+    def Areacalc(self):
+        area=self.length*self.breadth
+        print("Area of the rectangle is",area)
+R1=Room(int(input("Enter length")),int(input("Enter breadth")))
+print(R1.length,R1.breadth)
+R1.Areacalc()
+R2=Room(int(input("Enter length")),int(input("Enter breadth")))
+print(R2.length,R2.breadth)
+R2.Areacalc()
